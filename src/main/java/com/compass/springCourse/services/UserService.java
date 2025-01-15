@@ -24,4 +24,8 @@ public User findById(Long id) {
     return obj.get();
 }
 
+public User insert(User obj) {
+    return repository.save(obj);
+}
+
 }
